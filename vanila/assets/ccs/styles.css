@@ -1,0 +1,118 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #533E85;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 4fr 1fr;
+    background-color: lightgray;    
+}
+
+    .header {
+        /* background-color: lightcoral; */
+        background-color: #fff;
+        grid-column: 1 / 6;        
+        /* height: 15vh;         */
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;        
+    }
+        .logo {
+            /* border: 1px solid #000; */
+            flex-grow: 1;
+            display: flex;            
+            align-items: center;
+            justify-content: end;
+        }
+
+            .logo .logo-wrapper {
+                /* width: 11.625rem;                
+                height: 7.5625rem; */
+                width: 10.5rem;
+                height: 7.8rem;
+                /* border: 1px solid #fff; */
+                background-image: url(../img/logo-vanila-sin-fondo.png);
+                background-size: contain;
+                background-repeat: no-repeat;               
+            }
+
+        .main-menu {
+            /* border: 1px solid #000; */
+            flex-grow: 4;
+            display: flex;            
+            align-items:flex-end
+        }
+
+            .main-menu ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                /* border: 1px solid #000; */
+                /* margin-block-start: 0px;
+                padding-inline-start: 0px;
+                margin-block-end: 0px;                 */
+            }
+
+                .main-menu ul li {                   
+                    list-style: none;                    
+                }
+
+                    .main-menu ul li a {
+                        /* display: block; */
+                        padding: 15px 30px 15px 30px;
+                        /* background-color: aqua;
+                        border: 1px solid #000;
+                        border-radius: 5px; */
+                        font-size: 2rem;
+                        margin-right: 15px;
+                        color: #6743bb;                        
+                    }                       
+                
+        .buttons {
+            /* border: 1px solid #000; */
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-around;
+        }
+
+            .buttons a {
+                color: #ffff;
+                padding: 10px;
+                background-color: #533E85;
+                text-align: center;
+                border-radius: 3px;
+                letter-spacing: 1px;
+            }
+
+    .main-image {
+        background-color: lightcyan;
+        grid-column: 1 / 6;
+        /* height: 85vh; */
+    }
+
+        .main-image .image-container {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            /* background-image: url(../img/Holidays_Cakes_Candles_Birthday.jpg);
+            object-fit: cover; */            
+        }
+
+            .main-image .image-container img {
+                display: block;
+                width: 100%;
+                object-fit: cover;                
+            }
